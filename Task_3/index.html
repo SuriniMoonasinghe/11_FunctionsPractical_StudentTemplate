@@ -9,6 +9,48 @@
   <body>    
     <script>
 
+      let number1 = +prompt("Please enter your first number");
+      let operator = prompt("Please enter the operator");
+      let number2 = +prompt("Please enter your second number");
+
+      function calculator(number1,number2,operator){
+        
+        switch(operator) {
+
+          case '+' :
+            var value = number1 + number2
+          alert(`${number1} ${operator} ${number2} = ${value}`);
+            break;
+
+          case '-' :
+          var value = number1 - number2
+          alert(`${number1} ${operator} ${number2} = ${value}`);
+            break;
+
+          case '*' :
+          var value = number1 * number2
+          alert(`${number1} ${operator} ${number2} = ${value}`);
+            break;
+
+          case '/' :
+          var value = number1 / number2
+          alert(`${number1} ${operator} ${number2} = ${value}`);
+           break;
+
+          case '%':
+          var value = number1 % number2
+          alert(`${number1} ${operator} ${number2} = ${value}`);
+            break;
+
+          default:
+            alert(`I'm sorry, I don't recognise that operator. Please enter either +, -, *, / or %.`)
+            
+            break;
+        }
+      }
+
+      calculator(number1, number2,operator)
+
     </script>
   </body>
 </html>

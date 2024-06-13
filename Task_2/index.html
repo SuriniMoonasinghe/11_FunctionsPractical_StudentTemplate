@@ -8,7 +8,38 @@
   </head>
   <body>    
     <script>
+      
+      //how to use the switch statement
+      let inputSize = prompt("Please enter the size of your drink")
+      let inputDrink = prompt("Please enter your drink")
 
+      function drinkOrder(size,buttonName){
+        let drinkLabel;
+        switch(buttonName){
+          case 'orange':
+            drinkLabel = 'Orangeade';
+            break;
+
+          case 'lemon':
+            drinkLabel = 'Lemonade';
+            break;
+          
+            case 'cola':
+            drinkLabel = 'Cola';
+            break;     
+          
+            default:
+              alert("Your flavour isn't recognised, please make sure to choose from the following (case sensitive): cola, orange, lemon")
+        }
+
+        alert(`You have ordered a ${size} ${drinkLabel}`);
+    
+      }
+
+      drinkOrder(inputSize,inputDrink);
+
+
+      
     </script>
   </body>
 </html>
